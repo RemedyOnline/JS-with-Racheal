@@ -36,8 +36,41 @@ let collectionOfNames = ['Kofi', 'Ama', 'Yaa']; // an Array of Strings...
 let primeNumbers = [2, 3, 5, 7, 11, 13, 16, 17]; // an Array of integers(Number)...
 let listOfHeight = [5.3, 6.6, 4.8, 6.1, 5.5]; // an Array of floats (Number)...
 let collectionOfUserDetails = 
-    [{name: 'Kofi'}, {age: 34}]
+    [{name: 'Kofi'}, {age: 34}];
 
+    let fruits = 
+    [{
+        name: 'apple',
+        color: 'green',
+        price: 20,
+        size: 'M',
+        isRipe: true
+    }, {
+        name: 'banana',
+        color: 'yellow',
+        price: 10,
+        size: 'L',
+        isRipe: true
+    }, {
+        name: 'grapes',
+        color: 'purplish red',
+        price: 30,
+        size: 'S',
+        isRipe: false
+    }, {
+        name: 'pineapple',
+        color: 'yellow',
+        price: 15,
+        size: 'L',
+        isRipe: true
+    }, {
+        name: 'strawberry',
+        color: 'red',
+        price: 50,
+        size: 'M',
+        isRipe: true
+    }
+]
 
 console.log("Variable = ", Message);
 console.log("I had first class with a Grade Point Average of", GPA, "😜");
@@ -49,8 +82,10 @@ console.log(userDetails.name);
 console.log(parent);
 console.log(parent.noOfChildren);
 
+// concantenation...
 console.log(parent.name + " lives at " + parent.location + ". He has " + parent.noOfChildren + "children." + " It is " + parent.hasVehicle + " that He has a car. " + parent.name + "'s last born is called " + parent.children.lastBorn + ", whereas the second born " + parent.children.secondBorn + ", is the only girl after the first born, " + parent.children.firstBorn + ", who is in the same class with " + collectionOfNames[1]);
 
+// interpolation...
 console.log(`${parent.name} lives at ${parent.location}. He has ${parent.noOfChildren}children. It is ${parent.hasVehicle} that he has a car. ${parent.name}'s last born is called ${parent.children.lastBorn}, whereas the second born ${parent.children.secondBorn} is the only girl after the first born, ${parent.children.firstBorn}`);
 
 console.log(collectionOfNames);
@@ -62,3 +97,6 @@ console.log(collectionOfUserDetails);
 console.log(collectionOfUserDetails[1]);
 console.log(collectionOfUserDetails[0].name)
 
+console.log(fruits);
+console.log(fruits[1]);
+console.log(fruits[2].color);
