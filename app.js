@@ -196,3 +196,12 @@ async function fetchData(url) {
 fetchData("https://jsonplaceholder.typicode.com/posts");
 
 //...................................................
+
+const url = "https://v6.exchangerate-api.com/v6/e742b87a5027a80d6f425e32/latest/USD";
+
+async function websiteLink() {
+    const response = await fetch(url)
+    console.log(response)
+}
+
+websiteLink();
